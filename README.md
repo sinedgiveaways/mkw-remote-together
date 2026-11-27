@@ -62,7 +62,7 @@ Le jeu se déclare à Steam sous l'identité d'un jeu de votre bibliothèque qui
 
 ### Installation
 
-1. Téléchargez le zip depuis la [lien de téléchargement](https://github.com/sinedgiveaways/mkw-recomp/releases/download/v0.1.15-rpt1/mkw-recomp-0.1.15-rpt1-windows-x64.zip) et dézippez-le dans un dossier.
+1. Téléchargez le zip depuis ce [lien de téléchargement](https://github.com/sinedgiveaways/mkw-recomp/releases/download/v0.1.15-rpt1/mkw-recomp-0.1.15-rpt1-windows-x64.zip) et dézippez-le dans un dossier.
 2. Lancez `mkw.exe`, ouvrez **Game files**, choisissez votre dump puis appuyez sur **Set up**.
    La première préparation est longue (le jeu est compilé sur votre machine). Ensuite, **Play**.
 
