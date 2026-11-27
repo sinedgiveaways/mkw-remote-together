@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sinedgiveaways/mkw-recomp/releases/download/v0.1.15-rpt1/mkw-recomp-0.1.15-rpt1-windows-x64.zip"><b>⬇ Télécharger / Download : MKW-remote-together-v0.7 (Windows x64, zip)</b></a>
+  <a href="https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip"><b>⬇ Télécharger / Download : MKW-remote-together-v0.7 (Windows x64, zip)</b></a>
 </p>
 
 ---
@@ -30,7 +30,7 @@ branch of the [sinedgiveaways/mkw-recomp](https://github.com/sinedgiveaways/mkw-
 
 ## Contenu du zip / What is in the zip
 
-Le zip (`mkw-recomp-0.1.15-rpt1-windows-x64.zip`, 217 Mo) contient le dossier `mkw-recomp/` avec les éléments
+Le zip (`MKW-remote-together-v0.7-windows-x64.zip`, 217 Mo, [Release v0.7](https://github.com/sinedgiveaways/mkw-remote-together/releases/tag/v0.7)) contient le dossier `mkw-recomp/` avec les éléments
 ci-dessous. Les quatre DLL sont aussi dans le dossier [`dll/`](dll/) de ce dépôt : si l'une manque à côté de
 `mkw.exe`, copiez-la depuis ce dossier.
 
@@ -62,7 +62,7 @@ Le jeu se déclare à Steam sous l'identité d'un jeu de votre bibliothèque qui
 
 ### Installation
 
-1. Téléchargez le zip depuis ce [lien de téléchargement](https://github.com/sinedgiveaways/mkw-recomp/releases/download/v0.1.15-rpt1/mkw-recomp-0.1.15-rpt1-windows-x64.zip) et dézippez-le dans un dossier.
+1. Téléchargez le zip depuis ce [lien de téléchargement](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip) et dézippez-le dans un dossier.
 2. Lancez `mkw.exe`, ouvrez **Game files**, choisissez votre dump puis appuyez sur **Set up**.
    La première préparation est longue (le jeu est compilé sur votre machine). Ensuite, **Play**.
 
@@ -133,7 +133,7 @@ le nom MKW-remote-together-v0.7. Documentation détaillée : `docs/guides/remote
 
 ## English summary
 
-1. Download the zip from the [download link](https://github.com/sinedgiveaways/mkw-recomp/releases/download/v0.1.15-rpt1/mkw-recomp-0.1.15-rpt1-windows-x64.zip), unpack it, run `mkw.exe`, point **Game files** at your own
+1. Download the zip from the [download link](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip), unpack it, run `mkw.exe`, point **Game files** at your own
    dump and press **Set up**.
 2. `steam_api64.dll` is already next to `mkw.exe`. Set `steam_appid = 1118310` (RetroArch) under `[steam]` in `mkw.ini`.
 3. In Steam, install RetroArch and set its launch options to `"<path>\mkw.exe" %command%`, then press Play in Steam.
