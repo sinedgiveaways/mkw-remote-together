@@ -32,8 +32,6 @@ Tout le mérite de la recompilation revient à son auteur et à ses contributeur
 - Le programme s'appelle maintenant **`mkw-together.exe`**, dans un dossier `mkw-together/`.
 - **Mises à jour automatiques** depuis ce dépôt : l'écran d'accueil propose les nouvelles versions de MKW Together et
   les installe.
-- Nouveau fond d'écran et nouveau logo (aussi l'icône du programme).
-- Plus de liens GitHub et Discord sur l'écran d'accueil.
 - Plus de fenêtres noires (consoles) au démarrage.
 
 > **Vous aviez la v0.7 ?** Installez la v0.8 à la main une fois : la v0.7 cherche ses mises à jour chez

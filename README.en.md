@@ -30,8 +30,6 @@ sinedgiveaways/mkw-recomp fork). All credit for the recompilation goes to its au
 
 - The program is now called **`mkw-together.exe`**, in a `mkw-together/` folder.
 - **Automatic updates** from this repository: the start screen offers new MKW Together releases and installs them.
-- New background picture and new logo (also the program's icon).
-- No more GitHub and Discord links on the start screen.
 - No more black (console) windows at start.
 
 > **Had 0.7?** Install 0.8 by hand once: 0.7 looks for updates at adriadam10/mkw-recomp and will not offer it. Unpack
