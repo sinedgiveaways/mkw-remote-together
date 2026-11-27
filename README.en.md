@@ -65,7 +65,8 @@ RetroArch, App ID `1118310`, free). Your friends therefore see that game's name 
 
 - Windows 10 or 11 x64, an x86-64 CPU with AVX2, a Vulkan 1.3 GPU, about 30 GB free, 16 GB of RAM recommended.
 - Steam installed, running and signed in on the PC that runs the game (the host).
-- RetroArch (or another game of your library with Remote Play Together) installed in Steam.
+- A game of your library with Remote Play Together installed in Steam (for example Streets of Rage 4, or RetroArch,
+  which is free).
 - Your dump of Mario Kart World.
 
 ### Installation
@@ -79,26 +80,31 @@ RetroArch, App ID `1118310`, free). Your friends therefore see that game's name 
 
 `steam_api64.dll` is already next to `mkw-together.exe`: there is nothing to download.
 
-1. **The App ID.** In `mkw.ini` (next to `mkw-together.exe`):
+1. **The App ID: the Steam game of your choice.** mkw-together presents itself to Steam as a game of your library.
+   You can pick **any game you own**, as long as its Steam page lists "Remote Play Together". The App ID is the number
+   in its store address: `store.steampowered.com/app/<number>/`. Your friends will see that game's name in Steam.
+
+   Example with **Streets of Rage 4** (App ID `985890`), which works well with both the host's and the guests'
+   controllers. In `mkw.ini` (next to `mkw-together.exe`):
 
    ```ini
    [steam]
-   steam_appid = 1118310
+   steam_appid = 985890
    ```
 
-   The menu has the same setting: `F1` > General > Steam Remote Play Together > Steam App ID (it takes effect at the
-   next start).
+   RetroArch (`1118310`, free) works too. The menu has the same setting: `F1` > General > Steam Remote Play Together >
+   Steam App ID (it takes effect at the next start). **Enter a Steam App ID** lets you type another number there.
 
 2. **Start from Steam** (needed for your friends' controllers to reach the game):
-   - install RetroArch in Steam;
-   - right-click it > Properties > General > Launch options, then enter the path of `mkw-together.exe` in quotes
+   - install the game picked in step 1 in Steam (here Streets of Rage 4);
+   - right-click that game > Properties > General > Launch options, then enter the path of `mkw-together.exe` in quotes
      followed by `%command%`, for example:
 
      ```
      "C:\Users\you\Downloads\mkw-together\mkw-together.exe" %command%
      ```
 
-   - press Play in Steam. To get the real RetroArch back, empty the launch options.
+   - press Play on that game in Steam. To get the real game back, empty the launch options.
 
    Started from its own folder, the game accepts invitations, but Steam does not hand it the guests' controllers. A
    "non-Steam game" shortcut does not work either.
