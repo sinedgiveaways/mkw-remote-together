@@ -1,6 +1,6 @@
-<p align="center"><img src="logo.jpg" width="320" alt="MKW Remote Together"></p>
+<p align="center"><img src="logo.jpg" width="320" alt="MKW Together"></p>
 
-<h1 align="center">MKW-remote-together-v0.7</h1>
+<h1 align="center">MKW Together v0.8</h1>
 
 <p align="center">
   <b>Mario Kart World sur PC avec Steam Remote Play Together, pour jouer en écran partagé avec des amis à distance.</b><br>
@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip"><b>⬇ Télécharger / Download : MKW-remote-together-v0.7 (Windows x64, zip)</b></a>
+  <a href="https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.8/mkw-together-v0.8-windows-x64.zip"><b>⬇ Télécharger / Download : MKW Together v0.8 (Windows x64, zip)</b></a>
 </p>
 
 ---
@@ -17,26 +17,42 @@
 
 Ce build vient de **https://github.com/adriadam10/mkw-recomp** (recompilation statique de Mario Kart World pour
 Linux et Windows). Il est basé sur sa version **0.1.15**, avec en plus le support de Steam Remote Play Together
-(branche `steam-rpt` du fork [sinedgiveaways/mkw-recomp](https://github.com/sinedgiveaways/mkw-recomp)).
+et l'habillage MKW Together (branche [`mkw-together`](https://github.com/sinedgiveaways/mkw-recomp/tree/mkw-together)
+du fork sinedgiveaways/mkw-recomp).
 Tout le mérite de la recompilation revient à son auteur et à ses contributeurs.
 
 This build comes from **https://github.com/adriadam10/mkw-recomp** (a static recompilation of Mario Kart World for
-Linux and Windows). It is based on its **0.1.15** release, plus Steam Remote Play Together support (the `steam-rpt`
-branch of the [sinedgiveaways/mkw-recomp](https://github.com/sinedgiveaways/mkw-recomp) fork).
+Linux and Windows). It is based on its **0.1.15** release, plus Steam Remote Play Together support and the MKW Together look (the
+[`mkw-together`](https://github.com/sinedgiveaways/mkw-recomp/tree/mkw-together) branch of the
+sinedgiveaways/mkw-recomp fork).
 
 > **Rien du jeu n'est inclus.** Il faut votre propre copie de Mario Kart World, extraite de votre propre console
 > (`exefs/` et `romfs/`, ou un fichier `.nup` / `.nx`). Version 1.0.0 ou 1.8.0.
 > *Nothing of the game is included. You need your own dump of the game.*
 
+## Nouveautés de la v0.8 / What's new in 0.8
+
+- Le programme s'appelle maintenant **`mkw-together.exe`**, dans un dossier `mkw-together/`.
+- **Mises à jour automatiques** depuis ce dépôt : l'écran d'accueil propose les nouvelles versions de MKW Together et
+  les installe.
+- Nouveau fond d'écran et nouveau logo (aussi l'icône du programme).
+- Plus de liens GitHub et Discord sur l'écran d'accueil.
+- Plus de fenêtres noires (consoles) au démarrage.
+
+> **Vous aviez la v0.7 ?** Installez la v0.8 à la main une fois : la v0.7 cherche ses mises à jour chez
+> adriadam10/mkw-recomp et ne la proposera pas. Dézippez la v0.8 dans un **nouveau dossier** et refaites **Set up**,
+> puis changez le chemin dans les options de lancement Steam (`mkw-together.exe`, voir plus bas). Ensuite, les
+> versions suivantes s'installeront toutes seules.
+
 ## Contenu du zip / What is in the zip
 
-Le zip (`MKW-remote-together-v0.7-windows-x64.zip`, 217 Mo, [Release v0.7](https://github.com/sinedgiveaways/mkw-remote-together/releases/tag/v0.7)) contient le dossier `mkw-recomp/` avec les éléments
+Le zip (`mkw-together-v0.8-windows-x64.zip`, 218 Mo, [Release v0.8](https://github.com/sinedgiveaways/mkw-remote-together/releases/tag/v0.8)) contient le dossier `mkw-together/` avec les éléments
 ci-dessous. Les quatre DLL sont aussi dans le dossier [`dll/`](dll/) de ce dépôt : si l'une manque à côté de
-`mkw.exe`, copiez-la depuis ce dossier.
+`mkw-together.exe`, copiez-la depuis ce dossier.
 
 | Fichier | Rôle |
 |---|---|
-| `mkw.exe` | le lanceur et le jeu |
+| `mkw-together.exe` | le lanceur et le jeu |
 | `steam_api64.dll` | la bibliothèque de Steam (Steamworks SDK 1.65), **indispensable à Remote Play Together** |
 | `SDL3.dll`, `libopus-0.dll`, `libusb-1.0.dll` | bibliothèques d'entrée, d'audio et USB |
 | `setup/` | les outils qui préparent le jeu sur votre machine |
@@ -62,15 +78,15 @@ Le jeu se déclare à Steam sous l'identité d'un jeu de votre bibliothèque qui
 
 ### Installation
 
-1. Téléchargez le zip depuis ce [lien de téléchargement](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip) et dézippez-le dans un dossier.
-2. Lancez `mkw.exe`, ouvrez **Game files**, choisissez votre dump puis appuyez sur **Set up**.
+1. Téléchargez le zip depuis ce [lien de téléchargement](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.8/mkw-together-v0.8-windows-x64.zip) et dézippez-le dans un dossier.
+2. Lancez `mkw-together.exe`, ouvrez **Game files**, choisissez votre dump puis appuyez sur **Set up**.
    La première préparation est longue (le jeu est compilé sur votre machine). Ensuite, **Play**.
 
 ### Activer Remote Play Together
 
-`steam_api64.dll` est déjà à côté de `mkw.exe` : il n'y a rien à télécharger.
+`steam_api64.dll` est déjà à côté de `mkw-together.exe` : il n'y a rien à télécharger.
 
-1. **L'App ID.** Dans `mkw.ini` (à côté de `mkw.exe`) :
+1. **L'App ID.** Dans `mkw.ini` (à côté de `mkw-together.exe`) :
 
    ```ini
    [steam]
@@ -82,11 +98,11 @@ Le jeu se déclare à Steam sous l'identité d'un jeu de votre bibliothèque qui
 
 2. **Lancer depuis Steam** (nécessaire pour que les manettes de vos amis arrivent dans le jeu) :
    - installez RetroArch dans Steam ;
-   - clic droit > Propriétés > Général > Options de lancement, puis saisissez le chemin de `mkw.exe` entre
+   - clic droit > Propriétés > Général > Options de lancement, puis saisissez le chemin de `mkw-together.exe` entre
      guillemets suivi de `%command%`, par exemple :
 
      ```
-     "C:\Users\vous\Downloads\mkw-recomp\mkw.exe" %command%
+     "C:\Users\vous\Downloads\mkw-together\mkw-together.exe" %command%
      ```
 
    - appuyez sur Jouer dans Steam. Pour revenir au vrai RetroArch, videz les options de lancement.
@@ -113,9 +129,9 @@ Dans `logs/mkw.log`, la ligne `steam: running as App ID ...; Remote Play Togethe
 - Le jeu lit l'App ID au démarrage : un changement demande un redémarrage.
 - Sous Linux Wayland, si les invités voient « Steam not launched with -pipewire », lancez Steam avec
   `steam -pipewire`. (Ce build ne fournit que le zip Windows.)
-- **Mises à jour :** l'écran d'accueil propose les nouvelles versions de `adriadam10/mkw-recomp`, qui n'ont
-  **pas** Remote Play Together. Désactivez la vérification dans **Settings > Menu > Check for updates**, sinon
-  l'installation d'une de ces versions remplacerait ce build.
+- **Mises à jour :** l'écran d'accueil propose les nouvelles versions publiées dans ce dépôt
+  (`sinedgiveaways/mkw-remote-together`) et les installe. **Settings > Menu > Check for updates** désactive la
+  vérification.
 
 ### État des tests
 
@@ -126,19 +142,26 @@ encore été faite au moment de son écriture.
 
 ### Vérifier le build
 
-Le zip est celui de la release `v0.1.15-rpt1` du fork `sinedgiveaways/mkw-recomp`, republié tel quel sous
-le nom MKW-remote-together-v0.7. Documentation détaillée : `docs/guides/remote-play.md` dans la branche `steam-rpt-main` du fork.
+Le zip est celui que GitHub Actions a construit pour le tag `v0.8` de la branche `mkw-together` du fork
+`sinedgiveaways/mkw-recomp`, republié tel quel. SHA-256 du zip :
+`c444f75dece3bd9264137c15e12d3e875106aeca9f231b92e72be27c9e391d78`. Documentation détaillée :
+`docs/guides/remote-play.md` dans la branche `mkw-together` du fork.
+
+La v0.7 (`MKW-remote-together-v0.7-windows-x64.zip`, avec `mkw.exe`) reste disponible dans sa
+[Release](https://github.com/sinedgiveaways/mkw-remote-together/releases/tag/v0.7).
 
 ---
 
 ## English summary
 
-1. Download the zip from the [download link](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.7/MKW-remote-together-v0.7-windows-x64.zip), unpack it, run `mkw.exe`, point **Game files** at your own
+0. Coming from 0.7: install 0.8 by hand once, in a new folder (0.7 does not offer it), and update the Steam launch
+   options to `mkw-together.exe`. Later versions install themselves from the start screen.
+1. Download the zip from the [download link](https://github.com/sinedgiveaways/mkw-remote-together/releases/download/v0.8/mkw-together-v0.8-windows-x64.zip), unpack it, run `mkw-together.exe`, point **Game files** at your own
    dump and press **Set up**.
-2. `steam_api64.dll` is already next to `mkw.exe`. Set `steam_appid = 1118310` (RetroArch) under `[steam]` in `mkw.ini`.
-3. In Steam, install RetroArch and set its launch options to `"<path>\mkw.exe" %command%`, then press Play in Steam.
+2. `steam_api64.dll` is already next to `mkw-together.exe`. Set `steam_appid = 1118310` (RetroArch) under `[steam]` in `mkw.ini`.
+3. In Steam, install RetroArch and set its launch options to `"<path>\mkw-together.exe" %command%`, then press Play in Steam.
 4. In the game press `F1` > General > Steam Remote Play Together > **Invite friends** (or **Copy guest link**).
    Friends join with Steam, Steam Link or a browser. Their controllers become players 2, 3, 4.
-5. Turn off **Settings > Menu > Check for updates**: upstream releases do not include Remote Play Together.
+5. Updates come from this repository's releases; **Settings > Menu > Check for updates** turns the check off.
 
 Source of the build: https://github.com/adriadam10/mkw-recomp (based on 0.1.15).
